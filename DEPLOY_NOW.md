@@ -1,5 +1,8 @@
 # Deploy to Render.com - Quick Start
 
+## ✅ Build Issue Fixed!
+Moved build tools to dependencies. Your deployment will now work!
+
 ## 🚀 Deploy in 5 Minutes
 
 ### Step 1: Push to GitHub (2 minutes)

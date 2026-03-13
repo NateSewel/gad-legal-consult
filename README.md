@@ -163,6 +163,9 @@ See [DEPLOY_NOW.md](DEPLOY_NOW.md) for detailed deployment instructions.
 
 ## 🚀 Deploy to Render.com
 
+### ✅ Build Fix Applied
+Moved build tools (`tsx`, `esbuild`, `vite`) to dependencies so Render can build your app successfully.
+
 ### Quick Deploy (5 minutes)
 
 1. **Push to GitHub:**

@@ -81,7 +81,7 @@ Visit your Render URL and verify:
 ```yaml
 services:
   - type: web
-    name: gad-legal-consult
+    name: Er
     runtime: node
     plan: free
     buildCommand: npm install && npm run build

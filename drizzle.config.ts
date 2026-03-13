@@ -1,0 +1,17 @@
+import { defineConfig } from "drizzle-kit";
+
+// Database configuration disabled for static website
+// Uncomment and configure when you're ready to add a database
+
+// if (!process.env.DATABASE_URL) {
+//   throw new Error("DATABASE_URL, ensure the database is provisioned");
+// }
+
+export default defineConfig({
+  out: "./migrations",
+  schema: "./shared/schema.ts",
+  dialect: "postgresql",
+  dbCredentials: {
+    url: process.env.DATABASE_URL || "postgresql://localhost:5432/placeholder",
+  },
+});

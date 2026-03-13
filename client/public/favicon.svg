@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#000053"/>
+  
+  <!-- Scales of Justice Icon (simplified) -->
+  <g transform="translate(256, 140)">
+    <!-- Center pole -->
+    <rect x="-4" y="0" width="8" height="180" fill="#B22222" rx="4"/>
+    
+    <!-- Balance beam -->
+    <rect x="-80" y="40" width="160" height="6" fill="#E8A0A0" rx="3"/>
+    
+    <!-- Left scale -->
+    <circle cx="-60" cy="40" r="3" fill="#E8A0A0"/>
+    <line x1="-60" y1="43" x2="-60" y2="60" stroke="#E8A0A0" stroke-width="2"/>
+    <path d="M -80 60 L -40 60 L -45 75 L -75 75 Z" fill="#B22222" opacity="0.8"/>
+    
+    <!-- Right scale -->
+    <circle cx="60" cy="40" r="3" fill="#E8A0A0"/>
+    <line x1="60" y1="43" x2="60" y2="60" stroke="#E8A0A0" stroke-width="2"/>
+    <path d="M 40 60 L 80 60 L 75 75 L 45 75 Z" fill="#B22222" opacity="0.8"/>
+    
+    <!-- Top ornament -->
+    <circle cx="0" cy="0" r="8" fill="#E8A0A0"/>
+  </g>
+  
+  <!-- GAD Text -->
+  <text x="256" y="380" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#E8A0A0" text-anchor="middle">GAD</text>
+  
+  <!-- Subtle accent line -->
+  <rect x="156" y="400" width="200" height="3" fill="#B22222" rx="1.5" opacity="0.6"/>
+</svg>

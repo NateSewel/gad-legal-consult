@@ -4,11 +4,12 @@
 
 **Error on Render:**
 ```
+Cannot find module 'autoprefixer'
+Cannot find module 'postcss'
 sh: 1: tsx: not found
-==> Build failed 😞
 ```
 
-**Root Cause:** Build tools (`tsx`, `esbuild`, `vite`) were in `devDependencies` instead of `dependencies`.
+**Root Cause:** Build tools were in `devDependencies` instead of `dependencies`.
 
 ## What I Fixed
 
@@ -19,24 +20,28 @@ Moved these packages to `dependencies`:
 - ✅ `esbuild` - Bundles the server
 - ✅ `vite` - Builds the frontend
 - ✅ `@vitejs/plugin-react` - Vite React support
+- ✅ `autoprefixer` - PostCSS plugin for CSS
+- ✅ `postcss` - CSS processor
+- ✅ `tailwindcss` - CSS framework
 
-**Updated:** `render.yaml`
-- Changed build command to `npm ci` (cleaner install)
+**Why:** Render needs these tools to build your app in production.
 
 ## Verification
 
 **Local build tested:**
 ```bash
 npm run build
-✅ Success! Created dist/index.cjs and dist/public/
+✅ Success! 
+✓ Client built: dist/public/
+✓ Server built: dist/index.cjs
 ```
 
-## Deploy Now - 3 Steps
+## Deploy Now - 2 Steps
 
 ### Step 1: Commit the Fix
 ```bash
-git add package.json render.yaml
-git commit -m "Fix: Move build tools to dependencies for Render deployment"
+git add package.json
+git commit -m "Fix: Move all build tools to dependencies for Render"
 git push
 ```
 
